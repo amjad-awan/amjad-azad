@@ -1,0 +1,517 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body:hover .navbar:before
+{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 10px 5px 5px yellow;
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom:0;
+	right: 0;
+	opacity: .7;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+	transition: 2s ease all;
+
+
+}
+
+
+.img
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,200,300,.4),rgba(0,200,300,.4)),url('photo1/25.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	clip-path: polygon(100% 0%,100% 75%,50% 100%,0% 75%, 0 0);
+	position: relative;
+
+}
+
+.img button
+{
+	opacity: 1;
+	z-index: 1;
+}
+
+
+
+.navbar-brand 
+
+{
+	color:#fff;
+  	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+.navbar-brand:hover
+{
+	color:#fff !important;
+}
+
+.navbar-nav 
+{
+
+	width: inherit;
+	margin-left:auto;
+	margin-top: -15px;
+	//margin-right: 100px;
+}
+
+.navbar-nav li
+{
+
+		text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 1.2rem;
+	margin-left: 20px;
+
+}
+
+.navbar-nav li a
+{
+	//padding: 0px 40px 0px 40px;
+	color:#fff;
+}
+
+.navbar-toggler-icon
+{
+	color:red;
+	z-index: -1;
+}
+
+.center_div
+{
+	text-align: center;
+	position: absolute;
+	display: flex;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+.head
+{
+	text-align: center;
+}
+
+.head h2
+{
+   font-weight: bold;
+   font-size: 3.4rem;
+   font-family: Rockwell;
+   color: #fff;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.head p
+{
+	font-weight: bold;
+	font-size: 1.8rem;
+    color: #fff;
+   letter-spacing: 2px;
+   font-family: Rockwell;
+   text-transform: uppercase;
+}
+
+.btn_center 
+{
+
+	//text-align: center;
+	width: 100%;
+	position: absolute;
+	top:90%;
+	left:50%;
+	transform: translate(-50%,50%);
+}
+
+.btn_center a
+{
+	text-align: center;
+	border-radius: 30px;
+	border:2px solid #fff;
+	text-decoration: none;
+	color:white;
+	padding:10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	outline: none;
+}
+
+.btn_center a:hover
+{
+	background:white;
+	color:#50d1c0;
+	transition: .7s ease;
+	text-decoration: none;
+	//box-shadow: 2px 2px  30px 1px black ,-2px -2px 30px 1px black  ;
+		  box-shadow: 0px 0px 30px  0 rgba(50,50,50,0.3);
+
+}
+
+
+/*--------------------------header section ends------------*/
+
+/*-------------------------qualification section starts------*/
+
+.myServices
+{
+	position: relative;
+   width: 100%;
+   height: 100%;
+   background: #f7f7f7;
+   padding: 30px 0px 30px 0px;
+   border-radius: 10px;
+}
+
+
+.myServices h2
+{
+	height: auto;
+    text-align: center;
+    font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+.row
+{
+	margin: 50px 0px;
+}
+
+.card
+{
+	width: 100%;
+	height:100%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+
+.card-header
+{
+	  padding: 20px 0px 20px 0px !important;
+	background:#fff !important;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	font-family:  Rockwell;
+	text-transform: uppercase;
+}
+
+.card-body
+{
+	text-align: center;
+	font-weight: 400px;
+	font-size: 20px;
+	padding-bottom: 20px;
+
+
+}
+
+.card-footer
+{
+	text-align: center;
+	  padding: 20px 0px 20px 0px !important;
+	  	background:#fff !important;
+
+}
+
+.card-footer a
+{
+		  border:1px solid #fca311;
+
+		  padding: 10px 20px ;
+		  border-radius: 20px;
+		  color: #fca311;
+		  font-weight: bold;
+}
+.card:hover .card-header
+{
+	color:#fca311;
+
+}
+
+
+.card:hover .card-footer a
+{
+		  border:1px solid #fca311;
+
+		  padding: 10px 20px ;
+		  border-radius: 20px;
+		  color: #fca311;
+		  font-weight: bold;
+		  background: #fca311;
+		  color:#fff;
+		  transition: 1s ease;
+		  box-shadow: 0px 0px 30px  0 rgba(50,50,500,0.3);
+}
+
+.card:hover
+{
+	transform: translateY(-20px);
+	transition:  2s ;
+	box-shadow: 0px 0px 30px 0px rgba(50,50,50,.3);
+}
+
+
+
+
+.card-footer a:hover
+{
+	text-decoration: none;
+}
+
+
+/*-------------------------------------myqualification starts----------------------*/
+
+.myqualification
+{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0px 20px 0px;
+}
+
+
+
+.myqualification ul
+{
+	height: 100%;
+	
+	padding: 20px;
+	border-radius: 20px;
+
+}
+ .myqualification ul li
+ {
+ 	list-style: none;
+ 	background: #f7f7f7;
+ 	padding: 20px;
+ 	margin-top: 20px;
+ 	font-size: 1.1rem;
+ 	border-radius: 20px;
+
+ }
+ .myqualification h2
+{  
+		font-weight: bold;
+ 	font-family: Rockwell;
+ 	text-transform: uppercase;
+
+}
+ .myqualification .row h2
+ {
+ 
+ 	margin-left: 20px;
+ 	font-weight: bold;
+ 	font-family: Rockwell;
+ 	text-transform: uppercase;
+ }
+
+.myqualification h6,h5
+{
+	 	font-weight: bold;
+ 	font-family: Rockwell;
+}
+ .myqualification ul li:hover
+ {
+
+	transform: translateY(-20px);
+	transition:  2s ;
+	box-shadow: 0px 0px 30px 0px rgba(50,50,50,.3);
+		background:#70d1c0;
+
+ }
+
+ //.row
+ {
+ 	border: 2px solid red;
+ }
+  .myqualification ul li:hover p
+  {
+  	color:#fff;
+  }
+
+ /*-------------------------qualification ends---------------------------*/
+
+ /*------------------------contact us starts-----------------------------*/
+
+
+ .contactus
+ {
+ 	width: 100%;
+ 	height:100%;
+ 	background:linear-gradient(209.5deg,#16c9f6 50%,green 50%);
+ 	padding: 20px 0px 40px 0px;
+ 	border-radius: 10px;
+ }
+
+ .contactus h2
+ {
+ 	font-weight: bold;
+ 	font-family: Rockwell;
+ 	margin-top: 30px;
+ }
+
+label
+{
+	font-weight: bold;
+	font-size: 1.2rem;
+	 	font-family: Rockwell;
+}
+
+
+
+textarea
+{
+   border-radius: 0px;
+   height: 300px;
+}
+
+
+
+ .contactus button
+{
+	background: transparent !important;
+	border: 1px solid #16c9f6 !important;
+	padding: 10px 40px !important;
+	border-radius: 30px !important;
+	font-weight: bold !important;
+	outline: none;
+}
+
+ .contactus button:hover
+{
+
+		  color: green !important;
+		  font-weight: bold;
+		  background: #fff !important;
+		  transition: 1s all !important;
+		  box-shadow: 0px 0px 30px  0 rgba(50,50,50,0.3) !important;
+		  outline: none;
+}
+
+
+ /*------------------------contact us ends--------------------------------*/
+
+
+
+ /*------------------------footer starts--------------------------------*/
+footer
+{
+	//width: 100%;
+	//height: auto;
+	background-image: linear-gradient(rgba(20,20,20,.7),rgba(20,20,20,.7)),url(photo1/7.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 0px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.footer1 h1
+{
+	margin-top: 20px;
+	font-family: Rockwell;
+	text-transform: uppercase;
+}
+
+.footer1 col-sm-12
+{
+	margin-top: 50px;
+}
+
+.fa-phone,.fa-envelope ,.fa-media
+{
+	margin-right: 10px;
+}
+ul li
+{
+	margin-left: 15px;
+	list-style: none;
+	margin-top: 20px;
+}
+
+ul li .fa-facebook, .fa-google
+{
+	width: 40px;
+	height: 40px;
+	//padding: 15px;
+	background-color:#16c9f6; 
+	font-weight: bold;
+	font-size: 20px;
+	justify-content: center;
+	padding-top: 10px;
+	border-radius: 50%;
+	color:#fff;
+}
+ul li .fa-google:hover 
+{
+	color:red;
+}
+
+ul li .fa-facebook:hover 
+{
+	color:red;
+}
+
+
+ /*------------------------footer ends--------------------------------*/
+
+
+
+
+ /*------------------------copyright starts--------------------------------*/
+.copyright
+{
+	width: 100%;
+	height: 50px;
+	background: #000;
+	color:#fff;
+}
+
+.copyright h3
+{
+	padding-top: 3px;
+}
+.fa-heart-o
+{
+	color:red;
+}
+
+ /*------------------------copyright ends--------------------------------*/
+
+
+
+
